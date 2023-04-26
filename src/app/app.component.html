@@ -1,0 +1,36 @@
+<!-- <input
+  type="text"
+  [(ngModel)]="filterBy"
+  placeholder="filterBy"
+  (keyup)="filter()"
+/> -->
+
+<section>
+  <div class="table-container">
+    <input
+      type="text"
+      class="form-control"
+      id="searchProduct"
+      [(ngModel)]="searchBoxTxt"
+      name="searchBoxTxt"
+      aria-describedby="name"
+    />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of usersvalue | searchBox: searchBoxTxt">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.username }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

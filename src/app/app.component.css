@@ -1,0 +1,52 @@
+p {
+  font-family: Lato;
+}
+
+body {
+  background-color: #1f2039;
+}
+
+section {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #a5b4fc;
+}
+
+th {
+  font-size: 1.5em;
+  color: #a5b4fc;
+}
+
+td {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 680px) {
+  .responsive-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin: auto;
+  }
+  .responsive-container div {
+    border: solid #a5b4fc 2px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    color: #a5b4fc;
+  }
+}
